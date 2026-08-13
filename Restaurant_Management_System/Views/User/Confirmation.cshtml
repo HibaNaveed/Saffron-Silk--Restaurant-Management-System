@@ -1,0 +1,55 @@
+﻿
+@{
+    ViewData["Title"] = "Confirmation";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .header {
+        background-color: black;
+    }
+
+    #button1 {
+        color: black;
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 8px 32px;
+        border-radius: 50px;
+        transition: 0.5s;
+        margin: 10px 5px;
+        animation: fadeInUp 1s both 0.4s;
+        border: 2px solid var(--accent-color);
+    }
+
+        #button1:hover {
+            background: var(--accent-color);
+        }
+
+    .confirmation-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Full viewport height */
+        text-align: center;
+    }
+</style>
+<body>
+    <header id="header" class="header fixed-top">
+        <div class="branding d-flex align-items-cente">
+            <div class="container position-relative d-flex align-items-center justify-content-between">
+                <a href="index.html" class="logo d-flex align-items-center">
+                    <h1 class="sitename">Saffron & Silk</h1>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Centered Confirmation Section -->
+    <div class="confirmation-container">
+        <h1>Thank You!</h1>
+        <p>Your table at <strong>Saffron & Silk</strong> has been successfully booked.We can't wait to host you.</p>
+        <a href="@Url.Action("Index","User")" id="button1" class="btn-get-started">Return Home</a>
+    </div>
+</body>

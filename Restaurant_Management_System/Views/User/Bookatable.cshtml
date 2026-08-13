@@ -1,0 +1,101 @@
+﻿
+<h1>Bookatable</h1>
+
+@{
+    ViewData["Title"] = "Bookatable";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .header {
+        background-color: black;
+    }
+
+    #button1 {
+        color: black;
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 8px 32px;
+        border-radius: 50px;
+        transition: 0.5s;
+        margin: 10px 5px;
+        animation: fadeInUp 1s both 0.4s;
+        border: 2px solid var(--accent-color);
+    }
+
+        #button1:hover {
+            background: var(--accent-color);
+        }
+</style>
+<body>
+    <header id="header" class="header fixed-top">
+
+
+
+        <div class="branding d-flex align-items-cente">
+
+            <div class="container position-relative d-flex align-items-center justify-content-between">
+                <a href="index.html" class="logo d-flex align-items-center">
+                    <!-- Uncomment the line below if you also wish to use an image logo -->
+                    <!-- <img src="~/Restaurant/assets/img/logo.png" alt=""> -->
+                    <h1 class="sitename">Saffron & Silk</h1>
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+<section id="book-a-table" class="book-a-table section d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="container">
+        <!-- Section Title -->
+        <div class="section-title text-center" data-aos="fade-up">
+            <div><span>Book a</span> <span class="description-title">Table</span></div>
+        </div>
+
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-8">
+                <div class="reservation-form-bg p-4 shadow rounded">
+                    <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form">
+                        <div class="row gy-4">
+                            <div class="col-lg-4 col-md-6">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" required>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <input type="date" name="date" class="form-control" id="date" required>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <input type="time" class="form-control" name="time" id="time" required>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <input type="number" class="form-control" name="people" id="people" placeholder="# of people" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-3">
+                            <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                        </div>
+
+                        <div class="text-center mt-3">
+                               
+                                    <div class="text-center mt-3">
+                                    @* <a href="@Url.Action("Confirmation","User")" id="button1"class="btn-get-started">Book a Table</a> *@
+                                        <button type="submit" class="btn btn-primary">Book a Table</button>
+                                    </div>
+                              
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>

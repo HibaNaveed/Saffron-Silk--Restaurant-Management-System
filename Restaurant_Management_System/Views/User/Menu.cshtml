@@ -1,0 +1,260 @@
+﻿ @{ 
+     ViewData["Title"] = "Menu"; 
+    Layout = "~/Views/Shared/_Layout.cshtml";
+ } 
+ <style>
+     .header{
+         background-color:black;
+     }
+
+    #button1{
+        color: black;
+        font-weight: 500;
+        font-size: 12px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 8px 32px;
+        border-radius: 50px;
+        transition: 0.5s;
+        margin: 10px 5px;
+        animation: fadeInUp 1s both 0.4s;
+        border: 2px solid var(--accent-color);
+    }
+    #button1:hover{
+            background: var(--accent-color);
+    }
+ </style>
+ <body>
+    <header id="header" class="header fixed-top">
+
+
+
+        <div class="branding d-flex align-items-cente">
+
+            <div class="container position-relative d-flex align-items-center justify-content-between">
+                <a href="index.html" class="logo d-flex align-items-center">
+                    <!-- Uncomment the line below if you also wish to use an image logo -->
+                    <!-- <img src="~/Restaurant/assets/img/logo.png" alt=""> -->
+                    <h1 class="sitename">Saffron & Silk</h1>
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+<section id="menu" class="menu section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+        <div><span>Check Our Exotic</span> <span class="description-title">Menu</span></div>
+    </div><!-- End Section Title -->
+
+    <div class="container isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+            <div class="col-lg-12 d-flex justify-content-center">
+                <ul class="menu-filters isotope-filters">
+                    <li data-filter="*" class="filter-active">All</li>
+                    <li data-filter=".filter-starters">Starters</li>
+                    <li data-filter=".filter-salads">Salads</li>
+                    <li data-filter=".filter-maincourse">Main Course</li>
+                    <li data-filter=".filter-desert">Desert</li>
+                    <li data-filter=".filter-specialty">Specialty</li>
+                </ul>
+            </div>
+        </div><!-- Menu Filters -->
+
+        <div class="row isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-6 menu-item isotope-item filter-maincourse">
+                <img src="~/Restaurant/assets/img/menu/lobster-bisque.jpg" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">Silken Butter Chicken</a><span>Rs. 1450</span>
+                </div>
+                <div class="menu-ingredients">
+                    Tender chicken simmered in a velvety tomato-cream sauce.
+                        <a href="@Url.Action("AddtoCart","User")" id="button1" class="btn-get-started">Add to Cart</a>
+                </div>
+            </div><!-- Menu Item -->
+            <div class="col-lg-6 menu-item isotope-item filter-desert">
+                <img src="~/Restaurant/assets/img/menu/lobster-bisque.jpg" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">Saffron & Silk Kulfi</a><span>Rs. 250</span>
+                </div>
+                <div class="menu-ingredients">
+                    A creamy, saffron-infused frozen delight with pistachio crunch.
+                        <a href="@Url.Action("AddtoCart","User")" id="button1" class="btn-get-started">Add to Cart</a>
+                </div>
+            </div><!-- Menu Item -->
+            <div class="col-lg-6 menu-item isotope-item filter-starters">
+                <img src="~/Restaurant/assets/img/menu/lobster-bisque.jpg" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">Saffron-Infused Paneer Tikka</a><span>Rs. 450</span>
+                </div>
+                <div class="menu-ingredients">
+                    Grilled Cottage cheese marinated in aromatic saffron.
+                        <a href="@Url.Action("AddtoCart","User")" id="button1" class="btn-get-started">Add to Cart</a>
+                </div>
+            </div><!-- Menu Item -->
+
+            <div class="col-lg-6 menu-item isotope-item filter-specialty">
+                <img src="~/Restaurant/assets/img/menu/bread-barrel.jpg" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">The Saffron & Silk Platter</a><span>Rs. 3200</span>
+                </div>
+                <div class="menu-ingredients">
+                    A selection of our signature kebabs,starters & house dips.
+                        <a href="@Url.Action("AddtoCart","User")" id="button1" class="btn-get-started">Add to Cart</a>
+                </div>
+            </div><!-- Menu Item -->
+            <div class="col-lg-6 menu-item isotope-item filter-desert">
+                <img src="~/Restaurant/assets/img/menu/lobster-bisque.jpg" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">Golden Almond Baklava</a><span>Rs. 750</span>
+                </div>
+                <div class="menu-ingredients">
+                    Flaky pastry layered with honey, nuts, and a hint of saffron.
+                        <a href="@Url.Action("AddtoCart","User")" id="button1" class="btn-get-started">Add to Cart</a>
+                </div>
+            </div><!-- Menu Item -->
+            <div class="col-lg-6 menu-item isotope-item filter-maincourse">
+                <img src="~/Restaurant/assets/img/menu/lobster-bisque.jpg" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">Biryani</a><span>Rs. 450</span>
+                </div>
+                <div class="menu-ingredients">
+                    Fragrant basmati rice layered with Flavoured meat.
+                        <a href="@Url.Action("AddtoCart","User")" id="button1" class="btn-get-started">Add to Cart</a>
+                </div>
+            </div><!-- Menu Item -->
+            <div class="col-lg-6 menu-item isotope-item filter-starters">
+                <img src="~/Restaurant/assets/img/menu/cake.jpg" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">Silk Road Kebabs</a><span>Rs. 720</span>
+                </div>
+                <div class="menu-ingredients">
+                    Succulent minced meat skewers with a hint of exotic spices.
+                        <a href="@Url.Action("AddtoCart","User")" id="button1" class="btn-get-started">Add to Cart</a>
+                </div>
+            </div><!-- Menu Item -->
+            <div class="col-lg-6 menu-item isotope-item filter-desert">
+                <img src="~/Restaurant/assets/img/menu/lobster-bisque.jpg" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">Jasmine & Cardamom Cheesecake</a><span>Rs. 520</span>
+                </div>
+                <div class="menu-ingredients">
+                    A smooth and fragrant twist on the classic cheesecake.
+                        <a href="@Url.Action("AddtoCart","User")" id="button1" class="btn-get-started">Add to Cart</a>
+                </div>
+            </div><!-- Menu Item -->
+            <div class="col-lg-6 menu-item isotope-item filter-salads">
+                <img src="~/Restaurant/assets/img/menu/caesar.jpg" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">Saffron Caesar Salad</a><span>Rs. 500</span>
+                </div>
+                <div class="menu-ingredients">
+                    Crisp romaine lettuce tossed in a saffron-infused Caesar dressing, topped with spiced parmesan crisps, sumac-grilled chicken (optional), and toasted cumin croutons.
+                        <a href="@Url.Action("AddtoCart","User")" id="button1" class="btn-get-started">Add to Cart</a>
+                </div>
+            </div><!-- Menu Item -->
+            <div class="col-lg-6 menu-item isotope-item filter-maincourse">
+                <img src="~/Restaurant/assets/img/menu/lobster-bisque.jpg" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">Royal Malai Kofta</a><span>Rs. 1200</span>
+                </div>
+                <div class="menu-ingredients">
+                    Soft cottage cheese dumplings in a rich, cashew-based gravy.
+                        <a href="@Url.Action("AddtoCart","User")" id="button1" class="btn-get-started">Add to Cart</a>
+                </div>
+            </div><!-- Menu Item -->
+            <div class="col-lg-6 menu-item isotope-item filter-starters">
+                <img src="~/Restaurant/assets/img/menu/cake.jpg" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">Zafrani Prawns</a><span>Rs. 910</span>
+                </div>
+                <div class="menu-ingredients">
+                    Prawns marinated in saffron and slow-roasted with herbs.
+                        <a href="@Url.Action("AddtoCart","User")" id="button1" class="btn-get-started">Add to Cart</a>
+                </div>
+            </div><!-- Menu Item -->
+            <div class="col-lg-6 menu-item isotope-item filter-specialty">
+                <img src="~/Restaurant/assets/img/menu/tuscan-grilled.jpg" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">Tuscan Grilled</a><span>Rs. 600</span>
+                </div>
+                <div class="menu-ingredients">
+                    Grilled chicken with provolone,artichoke hearts & red pesto
+                        <a href="@Url.Action("AddtoCart","User")" id="button1" class="btn-get-started">Add to Cart</a>
+                </div>
+            </div><!-- Menu Item -->
+            <div class="col-lg-6 menu-item isotope-item filter-maincourse">
+                <img src="~/Restaurant/assets/img/menu/lobster-bisque.jpg" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">Tandoori Lamb Shank</a><span>Rs. 2200</span>
+                </div>
+                <div class="menu-ingredients">
+                    Lamb marinated overnight & slow-roasted in oven.
+                        <a href="@Url.Action("AddtoCart","User")" id="button1" class="btn-get-started">Add to Cart</a>
+                </div>
+            </div><!-- Menu Item -->
+            <div class="col-lg-6 menu-item isotope-item filter-starters">
+                <img src="~/Restaurant/assets/img/menu/mozzarella.jpg" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#"> Za’atar Mozzarella Sticks </a><span>Rs. 530</span>
+                </div>
+                <div class="menu-ingredients">
+                    LorCrispy mozzarella sticks coated with a fragrant blend of Middle Eastern spices, served with a saffron-garlic aioli.
+                        <a href="@Url.Action("AddtoCart","User")" id="button1" class="btn-get-started">Add to Cart</a>
+                </div>
+            </div><!-- Menu Item -->
+            <div class="col-lg-6 menu-item isotope-item filter-maincourse">
+                <img src="~/Restaurant/assets/img/menu/lobster-bisque.jpg" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">Zesty Lemon & Coconut Fish Curry</a><span>Rs. 1900</span>
+                </div>
+                <div class="menu-ingredients">
+                    A delicacy with a balance of citrus and creamy coconut.
+                        <a href="@Url.Action("AddtoCart","User")" id="button1" class="btn-get-started">Add to Cart</a>
+                </div>
+            </div><!-- Menu Item -->
+            <div class="col-lg-6 menu-item isotope-item filter-salads">
+                <img src="~/Restaurant/assets/img/menu/greek-salad.jpg" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">Mediterranean Silk Greek Salad</a><span>Rs. 630</span>
+                </div>
+                <div class="menu-ingredients">
+                    A refreshing mix of vine-ripened tomatoes, cucumbers, Kalamata olives, and feta cheese, drizzled with a saffron-lemon vinaigrette and garnished with fresh mint.
+                        <a href="@Url.Action("AddtoCart","User")" id="button1" class="btn-get-started">Add to Cart</a>
+                </div>
+            </div><!-- Menu Item -->
+
+            <div class="col-lg-6 menu-item isotope-item filter-salads">
+                <img src="~/Restaurant/assets/img/menu/spinach-salad.jpg" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">Golden Saffron Spinach Salad</a><span>Rs. 470</span>
+                </div>
+                <div class="menu-ingredients">
+                    Fresh spinach tossed with roasted almonds and crumbled feta,drizzled with a saffron-honey vinaigrette.Garnished with toasted sesame seeds for an extra crunch.
+                        <a href="@Url.Action("AddtoCart","User")" id="button1" class="btn-get-started">Add to Cart</a>
+                </div>
+            </div><!-- Menu Item -->
+
+            <div class="col-lg-6 menu-item isotope-item filter-specialty">
+                <img src="~/Restaurant/assets/img/menu/lobster-roll.jpg" class="menu-img" alt="">
+                <div class="menu-content">
+                    <a href="#">Silk & Spice Mocktail</a><span>Rs. 500</span>
+                </div>
+                <div class="menu-ingredients">
+                    A signature refreshing drink with saffron,rose & citrusy twist.
+                        <a href="@Url.Action("AddtoCart","User")" id="button1" class="btn-get-started">Add to Cart</a>
+                </div>
+            </div><!-- Menu Item -->
+
+        </div><!-- Menu Container -->
+
+    </div>
+
+</section><!-- /Menu Section -->
+
+</body>
