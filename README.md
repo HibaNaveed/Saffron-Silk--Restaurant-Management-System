@@ -1,7 +1,9 @@
 🍽️ Saffron Silk — Restaurant Management System
 📖 Introduction
 
-Saffron Silk is a web-based Restaurant Management System developed using ASP.NET Core. The system provides a modern and user-friendly platform for presenting and managing restaurant-related information, menu items, services, and customer interactions.
+Saffron Silk is a web-based Restaurant Management System developed using ASP.NET Core.
+
+The system provides a modern and user-friendly platform for presenting and managing restaurant-related information, menu items, services, and customer interactions.
 
 The project is designed to provide an attractive digital experience for restaurant customers while demonstrating the implementation of modern web development technologies.
 
@@ -38,20 +40,21 @@ Attractive colors and typography
 Interactive animations and visual elements
 Bootstrap-based responsive components
 🛠️ Tech Stack
-Frontend
-HTML5 — Website structure
-CSS3 — Styling and responsive design
-JavaScript — Interactive functionality
-Bootstrap — Responsive UI components
-jQuery — Client-side functionality
-Backend
+🎨 Frontend
+Technology	Purpose
+HTML5	Website structure
+CSS3	Styling and responsive design
+JavaScript	Interactive functionality
+Bootstrap	Responsive UI components
+jQuery	Client-side functionality
+⚙️ Backend
 ASP.NET Core
 C#
 Razor Views
 MVC Architecture
-Database
+🗄️ Database
 SQL Server
-Development Tools
+🔧 Development Tools
 Visual Studio
 .NET SDK
 SQL Server Management Studio
@@ -78,28 +81,28 @@ Saffron-Silk--Restaurant-Management-System/
 └── README.md
 
 🚀 Installation
-1. Clone the Repository
+1️⃣ Clone the Repository
 git clone https://github.com/HibaNaveed/Saffron-Silk--Restaurant-Management-System.git
 
-2. Navigate to the Project Directory
+2️⃣ Navigate to the Project Directory
 cd Saffron-Silk--Restaurant-Management-System
 
-3. Open the Project
+3️⃣ Open the Project
 
 Open the following solution file in Visual Studio:
 
 Restaurant_Management_System.sln
 
-4. Restore Dependencies
+4️⃣ Restore Dependencies
 
 Restore the required NuGet packages using Visual Studio or run:
 
 dotnet restore
 
-5. Build the Project
+5️⃣ Build the Project
 dotnet build
 
-6. Run the Application
+6️⃣ Run the Application
 dotnet run
 
 
@@ -118,7 +121,7 @@ The application includes several restaurant-focused sections:
 📍 Restaurant Information
 🎨 Assets
 
-The project contains various assets used to create the restaurant interface, including:
+The project contains various assets used to create the restaurant interface:
 
 🖼️ Restaurant images
 🍔 Food images
@@ -130,11 +133,13 @@ The project contains various assets used to create the restaurant interface, inc
 🖼️ Swiper
 🔍 GLightbox
 📚 jQuery
-Other frontend libraries
+📦 Other frontend libraries
 🎥 Project Demo
-Restaurant Management System Demo
+🍽️ Restaurant Management System Demo
 
-Video: Saffron_Silk_Restaurant_Management_System.mp4
+Demo Video:
+
+Saffron_Silk_Restaurant_Management_System.mp4
 
 The demonstration video showcases the user interface, design, and functionality of the Saffron Silk Restaurant Management System.
 
@@ -142,7 +147,7 @@ The demonstration video showcases the user interface, design, and functionality 
 
 🔮 Future Improvements
 
-The project can be extended with additional restaurant management functionality, including:
+The project can be extended with additional restaurant management functionality:
 
 🛒 Online Food Ordering
 👤 Customer Registration and Login
@@ -163,16 +168,16 @@ The project can be extended with additional restaurant management functionality,
 This project is developed for educational and project purposes.
 
 👩‍💻 Developer
-
 Hiba Naveed
 
 🔗 GitHub:
 https://github.com/HibaNaveed
 
 🔗 Repository
-
 Saffron Silk — Restaurant Management System
 
 🔗 https://github.com/HibaNaveed/Saffron-Silk--Restaurant-Management-System
 
-⭐ If you find this project useful, consider giving the repository a star!
+⭐ Support
+
+If you find this project useful, consider giving the repository a ⭐ Star on GitHub!
